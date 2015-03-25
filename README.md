@@ -2,9 +2,9 @@
 Online movies purchasing website.
 
 ## Team Roles
-* Marty - HTML/CSS
+* Cathal - HTML/CSS
 * Daragh - HTML/CSS
 * Stark - HTML/CSS
-* Cathal - Database
+* Marty - Database
 * Ann - Database
 * Daniel - PhP/Backend

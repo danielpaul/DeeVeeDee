@@ -1,5 +1,5 @@
-# CS230-Project
-Team project for CS230.
+# CS230 Project: DeeVeeDee
+Online movies purchasing website.
 
 ## Team Roles
 * Marty - HTML/CSS

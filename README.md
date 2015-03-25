@@ -6,5 +6,5 @@ Online movies purchasing website.
 * Daragh - HTML/CSS
 * Stark - HTML/CSS
 * Marty - Database
-* Ann - Database
+* Anne - Database
 * Daniel - PhP/Backend

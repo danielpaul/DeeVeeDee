@@ -8,3 +8,7 @@ Online movies purchasing website.
 * Marty - Database
 * Anne - Database
 * Daniel - PhP/Backend
+
+## Templete folder
+This folder is for the layout of web page.  
+

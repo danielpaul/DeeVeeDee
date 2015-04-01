@@ -19,6 +19,13 @@ body {
 
 header {}
 
+#welcome {
+	font-family: 'Antic', Helvetica, sans-serif;
+	color: #FFFFFF;
+	padding: 20px 0 0 20px;
+	margin: 0 0 0 0;
+}
+
 #logo {
     background-color: #000000;
     width: 100%;
@@ -27,7 +34,7 @@ header {}
 
 #logo_text {
     font-family: 'Julius Sans One', Helvetica, sans-serif;
-    font-size: 60px;
+    font-size: 50px;
     font-weight: bold;
     text-indent: 25px;
     margin: 0 0 0 0;

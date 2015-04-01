@@ -45,13 +45,9 @@ header {}
     margin: 0 0 0 0;
     list-style-type: none;
     overflow: hidden;
-    padding-top: 0px;
-    padding-right: 20px;
-    padding-left: 0px;
-    padding-bottom: 20px;
+    padding: 0 20px 20px 20px;
     width: 100%;
     position: relative;
-    text-indent: 25px;
 }
 
 .list {
@@ -64,8 +60,8 @@ header {}
     font-size: 25px;
     text-decoration: none;
     display: inherit;
-    margin: 0 0 0 0;
-    padding-right: 20px;
+    margin: 0 15px 0 15px;
+    padding: 0 5px 0 5px;
     color: #FFFFFF;
 }
 
@@ -75,8 +71,8 @@ header {}
     font-size: 25px;
     text-decoration: none;
     display: inherit;
-    margin: 0 0 0 0;
-    padding-right: 20px;
+    margin: 0 15px 0 15px;
+    padding: 0 5px 0 5px;
     color: #FFFFFF;
 }
 

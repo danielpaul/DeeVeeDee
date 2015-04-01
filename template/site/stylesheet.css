@@ -111,11 +111,18 @@ footer {
     width:200px;
     margin-left: 10px;
     margin-top: 10px;
+    float :left;
 
 }
 #details{
-    width:100%;
-    margin=
+    font-family: 'Julius Sans One', Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    width:auto;
+    float:left;
+    
+    
+
 
 
 }

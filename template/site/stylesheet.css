@@ -91,6 +91,7 @@ iframe {
 
 footer {
     margin: 0 0 0 0;
+    
 }
 
 #footer {
@@ -121,6 +122,7 @@ footer {
     width:auto;
     float:left;
     }
+<<<<<<< HEAD
     
   #Trailer{
     height=158px;
@@ -129,3 +131,48 @@ footer {
   }
   
 //Cathal hayes End
+=======
+//Results page ID's
+#refineBy {
+	border:solid 2px;
+	border-color: black;
+	float:left;
+	padding: 5px;
+	margin: 5px;
+}
+#contentResults{
+	border:solid 2px;
+	border-color: black;
+	float: left;
+	margin: 5px;
+	padding: 5px;
+}
+#contentTitle{
+	text-align: center;
+}
+div.img {
+	margin: 15px;
+	padding: 5px;
+	height: auto;
+	width: auto;
+	float: left;
+	text-align: center;
+}
+div.img img {
+	display: inline;
+	margin: 5px;
+	border: 1px solid #ffffff;
+}
+div.img a:hover img {
+	border:1px solid #0000ff;
+}
+div.desc {
+	text-align: center;
+	font-weight: normal;
+	width: 120px;
+}
+a.links{
+	color: black;
+	text-decoration: none;
+}
+>>>>>>> origin/master

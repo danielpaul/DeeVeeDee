@@ -160,3 +160,8 @@ div.desc {
 	text-align: center;
 	font-weight: normal;
 	width: 120px;
+}
+a.links{
+	color: black;
+	text-decoration: none;
+}

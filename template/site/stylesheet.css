@@ -106,8 +106,8 @@ footer {
     padding: 30px 0 30px 0;
     clear:both;
 }
-
-#id1{
+//Cathal hayes Start
+#TitleImage{
     height:282px;
     width:200px;
     margin-left: 10px;
@@ -122,6 +122,16 @@ footer {
     width:auto;
     float:left;
     }
+<<<<<<< HEAD
+    
+  #Trailer{
+    height=158px;
+    width=280px;
+    
+  }
+  
+//Cathal hayes End
+=======
 //Results page ID's
 #refineBy {
 	border:solid 2px;
@@ -165,3 +175,4 @@ a.links{
 	color: black;
 	text-decoration: none;
 }
+>>>>>>> origin/master

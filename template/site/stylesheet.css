@@ -41,7 +41,38 @@ header {}
     color: #FFFFFF;
     padding-top: 20px;
     padding-bottom: 30px;
-    padding-right: 75%;
+    width: 30%;
+    text-align: left;
+    float: left;
+}
+
+#search {
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    width: 30%;
+    height: 40px;
+    text-align: left;
+    float: left;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#search-field {
+    font-family: 'Lato', Helvetica, sans-serif;
+    font-size: 20px;
+    margin-left: 20px;
+    margin-top: 5px;
+    width: 89%;
+    border: 0;
+}
+
+#search-button {
+    border: 0;
+    background-color: #FFFFFF;
+    font-size: 20px;
+    padding: 0;
+    margin-top: 9px;
+    cursor: pointer;
 }
 
 #header_menu {

@@ -74,6 +74,23 @@ header {}
     cursor: pointer;
 }
 
+#login {
+    float: right;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    margin-right: 50px;
+    height: 40px;
+}
+
+.login-buttons {
+    margin-right: 20px;
+    border: 0;
+    background-color: #000000;
+    color: #FFFFFF;
+    padding: 0;
+    cursor: pointer;
+}
+
 #header_menu {
     background-color: #000000;
 }

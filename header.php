@@ -28,7 +28,8 @@
                     <button id="search-button"><i class="fa fa-search fa-2x"></i></button>
             </div>
             <div id="login">
-                <button id="log-in-button"><i class="fa fa-sign-in"></i></button>
+                <button id="shopping-button" class="login-buttons"><i class="fa fa-shopping-cart fa-2x"></i></button>
+                <button id="log-in-button" class="login-buttons"><i class="fa fa-sign-in fa-2x"></i></button>
             </div>
         </div>
         <div id="header_menu">

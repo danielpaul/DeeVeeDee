@@ -7,13 +7,13 @@
     <!-- Author -->
     <meta name="author" content="Zhenbang Xiao">
     <!-- Style Sheet -->
-    <link rel="stylesheet" href="template/site/stylesheet.css">
+    <link rel="stylesheet" href="./site/stylesheet.css">
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="template/site/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./site/font-awesome/css/font-awesome.min.css">
     <!-- Script -->
     <!-- jQuery -->
-    <script src="template/site/jquery/jquery.min.js"></script>
-    <script src="template/site/action.js"></script>
+    <script src="./site/jquery/jquery.min.js"></script>
+    <script src="./site/action.js"></script>
     <!-- Title -->
     <title>DeeVeeDee - The DVD Rental System</title>
 </head>
@@ -25,7 +25,10 @@
             <p id="logo_text">DeeVeeDee</p>
             <div id="search">
                 <input type="text" name="search-field" id="search-field" value="Movie, Actor, Genre...">
-                    <button id="search-button"><i class="fa fa-search"></i></button>
+                    <button id="search-button"><i class="fa fa-search fa-2x"></i></button>
+            </div>
+            <div id="login">
+                <button id="log-in-button"><i class="fa fa-sign-in"></i></button>
             </div>
         </div>
         <div id="header_menu">

@@ -37,7 +37,7 @@
       ?>
 
         <div class="img">
-          <a class="links" href="single.php?v=<?php echo $line['movid_id']; ?>">
+          <a class="links" href="movie.php?v=<?php echo $line['movid_id']; ?>">
             <img src="template/images/<?php echo $line['movid_id']; ?>.jpg" alt="<?php echo $line['movie_title']; ?>" width="130" height="190">
             <div class="desc"><?php echo $line['movie_title']; ?> &euro;<?php echo $line['movie_price']; ?></div>
           </a>

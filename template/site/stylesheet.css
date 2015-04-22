@@ -168,6 +168,25 @@ footer {
   table, th, td {
    border: 1px solid black;
 }
+
+#Login{
+  float:right;
+  font-family: 'Julius Sans One', Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    border: 1px;
+    width:60%;
+  clear:both;
+ 
+}
+
+#form
+
+{
+  height:20px;
+  width:200px;
+
+}
   
 /*Cathal hayes End*/
 
@@ -214,4 +233,4 @@ a.links{
 	color: black;
 	text-decoration: none;
 }
-
+/*end results styling */

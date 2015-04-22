@@ -2,7 +2,7 @@
 
 
     <!-- Insert your code here -->
-    <iframe id="main-container" name="content" src="http://www.apple.ie"></iframe>
+    Homepage content goes here.
 
 
 <?php include('footer.php'); ?>

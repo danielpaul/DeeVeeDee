@@ -215,3 +215,23 @@ a.links{
 	text-decoration: none;
 }
 
+  /*martin lynch start*/
+    
+    #user_details_payment_page{
+	list-style-type: none;	
+	padding: 10px;
+    margin: 10px;
+}
+
+#cc_details_submission{
+	padding: 20px;
+    margin: 10px;
+}
+
+#checkout_page{
+	padding: 20px;
+    margin: 10px;
+}
+
+/*martin lynch end*/
+

@@ -140,8 +140,8 @@ footer {
 }
 /*Cathal hayes Start*/
 #TitleImage{
-    height:282px;
-    width:200px;
+    height:423px;
+    width:300px;
     margin-left: 10px;
     margin-top: 10px;
     float:left;
@@ -150,10 +150,12 @@ footer {
 #details{
     font-family: 'Julius Sans One', Helvetica, sans-serif;
     font-weight: bold;
-    font-size: 15px;
-    border: 1px solid black;
+    font-size: 20px;
+    border: 1px;
     width:auto;
+    height:20px;
     float:left;
+    padding-left: 150px;
     }
 
     
@@ -161,12 +163,15 @@ footer {
     height=158px;
     width=280px;
     float:left;
-    padding-left: 300px;
-    
+    padding-top: 50px;
+    padding-left: 150px;
     
   }
+  
   table, th, td {
    border: 1px solid black;
+   width:50%;
+   height:auto;
 }
 
 #input{
@@ -180,9 +185,7 @@ footer {
  
 }
 
-#form
-
-{
+#form{
   height:20px;
   width:200px;
 

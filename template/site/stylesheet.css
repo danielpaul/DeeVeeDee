@@ -260,4 +260,8 @@ a.links{
 
 /*martin lynch end*/
 
-
+/* Basket page - Daragh */
+tr.bask > td{
+    padding-bottom: 1em;
+}
+/* Basket page - end */

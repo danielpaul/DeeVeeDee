@@ -172,6 +172,7 @@ footer {
    border: 1px solid black;
    width:50%;
    height:auto;
+   text-align :center;
 }
 
 #input{
@@ -190,7 +191,18 @@ footer {
   width:200px;
 
 }
+
+  #basketTable, td, th {
+    
+    width:auto;
+    border: 0px solid black;
+   
+  }
   
+  #tabimg{
+     width:160px;
+     height:240px;
+  }
 /*Cathal hayes End*/
 
 /*Results page ID's*/

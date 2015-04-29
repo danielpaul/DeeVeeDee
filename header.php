@@ -27,6 +27,7 @@
                 <input type="text" name="search-field" id="search-field" value="Movie, Actor, Genre...">
                     <button id="search-button"><i class="fa fa-search fa-2x"></i></button>
             </div>
+	    <div style="clear: both;"></div>
             <div id="login">
                 <button id="shopping-button" class="login-buttons"><i class="fa fa-shopping-cart fa-2x"></i></button>
                 <button id="log-in-button" class="login-buttons"><i class="fa fa-sign-in fa-2x"></i></button>

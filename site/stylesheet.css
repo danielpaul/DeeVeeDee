@@ -64,8 +64,8 @@ body {
     font-family: 'Lato', Helvetica, sans-serif;
     font-size: 20px;
     margin-left: 20px;
-    margin-top: 5px;
-    width: 89%;
+    margin-top: 3px;
+    width: 80%;
     border: 0;
     color: #AAAAAA;
 }
@@ -74,7 +74,7 @@ body {
     border: 0;
     background-color: #FFFFFF;
     padding: 0;
-    margin-top: 9px;
+    margin-top: 3px;
     cursor: pointer;
 }
 

@@ -17,7 +17,10 @@ body {
     height: 100%;
 }
 
-header {}
+#header {
+    height: 200px;
+    background-color: #000000;
+}
 
 #welcome {
 	font-family: 'Antic', Helvetica, sans-serif;

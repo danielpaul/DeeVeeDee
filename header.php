@@ -19,9 +19,9 @@
 </head>
 
 <body>
-    <header>
+    <header id="header">
         <div id="logo">
-          <div id="welcome">Stark.</div>
+          <div id="welcome">Dia duit.</div>
             <p id="logo_text">DeeVeeDee</p>
             <div id="search">
                 <input type="text" name="search-field" id="search-field" value="Movie, Actor, Genre...">
@@ -32,6 +32,7 @@
                 <button id="log-in-button" class="login-buttons"><i class="fa fa-sign-in fa-2x"></i></button>
             </div>
         </div>
+	<div style="clear: both;"></div>
         <div id="header_menu">
             <ul id="genres">
               <li class="list">

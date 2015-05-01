@@ -1,54 +1,41 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title><?php echo $title; ?> - DeeVeeDee</title>
+        <meta name="description" content="Browse, purchase and download DVDs with a few clicks.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<head>
-    <!-- Character Set -->
-    <meta charset="utf-8">
-    <!-- Author -->
-    <meta name="author" content="Zhenbang Xiao">
-    <!-- Style Sheet -->
-    <link rel="stylesheet" href="./site/stylesheet.css">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="./site/font-awesome/css/font-awesome.min.css">
-    <!-- Script -->
-    <!-- jQuery -->
-    <script src="./site/jquery/jquery.min.js"></script>
-    <script src="./site/action.js"></script>
-    <!-- Title -->
-    <title>DeeVeeDee - The DVD Rental System</title>
-</head>
+        <link rel="icon" type="image/png" src="img/icon.png">
 
-<body>
-    <header>
-        <div id="logo">
-          <div id="welcome">Stark.</div>
-            <p id="logo_text">DeeVeeDee</p>
-            <div id="search">
-                <input type="text" name="search-field" id="search-field" value="Movie, Actor, Genre...">
-                    <button id="search-button"><i class="fa fa-search fa-2x"></i></button>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <header>
+            <section id="top">
+                <div class="container">
+                    <div id="logo">
+                        <h1>DeeVeeDee</h1>
+                        <h3>Watch DVDs in a few clicks</h3>
+                    </div>
+                    <div id="search">
+                        Search box
+                    </div>
+                </div>
             </div>
-            <div id="login">
-                <button id="shopping-button" class="login-buttons"><i class="fa fa-shopping-cart fa-2x"></i></button>
-                <button id="log-in-button" class="login-buttons"><i class="fa fa-sign-in fa-2x"></i></button>
+            <section id="menu">
+                <div class="container">
+                    <ul>
+                        <li><a href="#" title="">Home</a></li>
+
+                        <!-- login / register float right -->
+                    </ul>
+                </div>
             </div>
-        </div>
-        <div id="header_menu">
-            <ul id="genres">
-              <li class="list">
-                <a href="http://www.apple.ie" target="content">Home</a>
-              </li>
-                <li class="list">
-                  <a href="http://www.ideastarter.ie" target="content">Action</a>
-                </li>
-                <li class="list">
-                  <a href="#" target="content">TV Shows</a>
-                </li>
-                <li class="list">
-                    <a href="#" target="content">Horror</a>
-                </li>
-                <li class="list">
-                    <a href="http://starkshaw.me" target="content">Sci-Fi</a>
-                </li>
-            </ul>
-        </div>
-    </header>
+        </header>

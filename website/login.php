@@ -10,14 +10,15 @@
 		
 	<div  id="input">
 
-<form action="php/user.php" method="post">
+<form action="php/user_login.php" method="post">
 Username<br>
 <input type="text" name="username">
 <br>
 Password<br>
 <input type="password" name="pass">
-</form>
+
 <button type="submit">Login</button>
+</form>
 
 <p>Need an account?</p>
 <a href="register.php" >Register</a>

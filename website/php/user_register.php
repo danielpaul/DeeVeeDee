@@ -30,7 +30,7 @@ $result = pg_query($dbconn, "INSERT INTO users(user_fname, user_lname, username,
                   VALUES('{$fname}', '{$lname}', '{$username}', '{$email}', '".salt_pass($pass_one)."')");
 
 //dump the result object
-var_dump($result);
+// var_dump($result);
 
 // Closing connection
 pg_close($dbconn);

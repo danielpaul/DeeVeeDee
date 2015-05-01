@@ -6,7 +6,7 @@
   $dbconn = pg_connect("host=webcourse.cs.nuim.ie dbname=cs230 user=cs230teamd6 password=Ootheigh") 
     or die('Could not connect: ' . pg_last_error());
 
-  $query = 'SELECT * FROM movies WHERE movid_id = ' . $_GET['v'];
+  $query = 'SELECT DISTINCT * FROM movies WHERE movid_id = ' . $_GET['v'];
 
   $result = pg_query($query) or die('Query failed: ' . pg_last_error());
 

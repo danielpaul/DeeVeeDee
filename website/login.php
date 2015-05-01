@@ -10,17 +10,17 @@
 		
 	<div  id="input">
 
-<form>
+<form action="php/user.php" method="post">
 Username<br>
-<input type="text" name="Username" id="form">
+<input type="text" name="username">
 <br>
 Password<br>
-<input type="Password" name="Password" id="form">
+<input type="password" name="pass">
 </form>
-<button type="button">Login</button>
+<button type="submit">Login</button>
 
 <p>Need an account?</p>
-<a href="Register.html" >Register</a>
+<a href="register.php" >Register</a>
 	
 	<pre>
 	  

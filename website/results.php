@@ -1,40 +1,5 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<!-- Character Set -->
-		<meta charset="utf-8">
-		<!-- Author -->
-		<meta name="author" content="Daragh Broderick">
-		<!-- Style Sheet -->
-		<link rel="stylesheet" href="./site/stylesheet.css">
-		<!-- Title -->
-		<title>DeeVeeDee - The DVD Rental System</title>
-	</head>
-	<body>
-		<header>
-			<div id="logo">
-				<p id="logo_text">DeeVeeDee</p>
-			</div>
-			<div id="search">
-				<!-- Fill search field here -->
-			</div>
-			<div id="header_menu">
-				<ul id="genres">
-					<li class="list">
-						Thriller
-					</li>
-					<li class="list">
-						Comedy
-					</li>
-					<li class="list">
-						Documentary
-					</li>
-					<li class="list">
-						Romantic
-					</li>
-				</ul>
-			</div>
-		</header>
+<?php include('php/header.php'); ?>
+
 		<!-- Insert your code here -->
 		<div id="refineBy" >
 			<h3>Refine search by.</h3>
@@ -71,10 +36,6 @@
 				</a>
 			</div>
 		</div>
-		<footer>
-			<div id="footer">
-				DeeVeeDee Team 2015
-			</div>
-		</footer>
-	</body>
-</html>
+
+
+<?php include('php/footer.php'); ?>

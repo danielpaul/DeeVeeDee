@@ -1,3 +1,5 @@
+<?php require_once('php/functions.php'); ?>
+
 <!DOCTYPE html>
 <html>
 
@@ -25,7 +27,7 @@
             <div id="search">
                 <form action="results.php" method="get">
                     <input type="text" name="q" id="search-field" placeholder="Search for movies...">
-                    <button type="submit" id="search-button"><i class="fa fa-search"></i></button>
+                    <!-- <button type="submit" id="search-button"><i class="fa fa-search"></i></button> -->
                 </form>
             </div>
             <div id="login">

@@ -47,33 +47,34 @@
             </ul>
         </div>
     </header>
-	
-			<h1>Your Shopping Cart</h1>
+    
+			<p id="input">Your Shopping Cart</p>
 			<br>
-			<table style="width:100%">
+			<table class="basketTable">
   				<tr class="bask">
-    				<td>Item</td>
     				<td>Description</td>
     				<td>Price</td>
   				</tr>
   				<tr class="bask">
-   					<td>1</td>
-    				<td><img style="float: left;" src="http://i.telegraph.co.uk/multimedia/archive/03051/The_Imitation_Game_3051179c.jpg" alt="The Imitation Game" width="130" height="190">
+   					<td><img id="tabimg" src="http://i.telegraph.co.uk/multimedia/archive/03051/The_Imitation_Game_3051179c.jpg" alt="The Imitation Game">
 					The Imitation Game</td>
     				<td> &euro;14.99 </td>
   				</tr>
   				<tr class="bask">
-    				<td>2</td>
-    				<td><img style="float: left;" src="http://ecx.images-amazon.com/images/I/51C7G4YDE5L.jpg" alt="Mr. & Mrs. Smith" width="130" height="190">
+    			
+    				<td><img id="tabimg" src="http://ecx.images-amazon.com/images/I/51C7G4YDE5L.jpg" alt="Mr. & Mrs. Smith">
 					Mr. & Mrs. Smith</td>
     				<td> &euro;4.99 </td>
   				</tr>
   				<tr class="bask">
     				<td></td>
-    				<td></td>
     				<td>Total &euro;19.98 <button type="button">Checkout</button></td>
   				</tr>
 			</table>
+			
+			
+			
+			
 				<footer>
 			<div id="footer">
 				DeeVeeDee Team 2015

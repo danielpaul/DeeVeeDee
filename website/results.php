@@ -1,5 +1,15 @@
 <?php include('php/header.php'); ?>
 
+<?php
+  $dbconn = pg_connect("host=webcourse.cs.nuim.ie dbname=cs230 user=cs230teamd6 password=Ootheigh") 
+    or die('Could not connect: ' . pg_last_error());
+
+  // Performing SQL query
+  $query = 'SELECT * FROM movies';
+  $result = pg_query($query) or die('Query failed: ' . pg_last_error());
+
+?>
+
 		<!-- Insert your code here -->
 		<div id="refineBy" >
 			<h3>Refine search by.</h3>
@@ -15,27 +25,35 @@
 		</div>
 		<div id="contentResults" >
 			<h2 id="contentTitle">Search Results:</h2>
-			<div class="img">
+			
 
-				<a class="links" href="template/Title.html">
+			<?php 
+        while($line = pg_fetch_array($result, null, PGSQL_ASSOC)) {
+      ?>
 
-					<img src="http://i.telegraph.co.uk/multimedia/archive/03051/The_Imitation_Game_3051179c.jpg" alt="The Imitation Game" width="130" height="190">
-					<div class="desc">The Imitation Game &euro;14.99</div>
-				</a>
-			</div>
-			<div class="img">
-				<a class="links" href="item.html">
-					<img src="http://ecx.images-amazon.com/images/I/51C7G4YDE5L.jpg" alt="Mr. & Mrs. Smith" width="130" height="190">
-					<div class="desc">Mr. & Mrs. Smith &euro;4.99</div>
-				</a>
-			</div>
-			<div class="img">
-				<a class="links" href="item.html">
-					<img src="http://ecx.images-amazon.com/images/I/519Jw9eCZOL._SL160_.jpg" alt="Game of Thrones season 1" width="130" height="190">
-					<div class="desc">Game of Thrones Season 1 &euro;9.99</div>
-				</a>
-			</div>
+        <div class="img">
+          <a class="links" href="movie.php?v=<?php echo $line['movid_id']; ?>">
+            <img src="template/images/<?php echo $line['movid_id']; ?>.jpg" alt="<?php echo $line['movie_title']; ?>" width="130" height="190">
+            <div class="desc"><?php echo $line['movie_title']; ?> &euro;<?php echo $line['movie_price']; ?></div>
+          </a>
+        </div>
+
+      <?php 
+        } 
+      ?>
+
 		</div>
+
+
+
+<?php
+  // Free resultset
+  pg_free_result($result);
+
+  // Closing connection
+  pg_close($dbconn);
+?>
+
 
 
 <?php include('php/footer.php'); ?>

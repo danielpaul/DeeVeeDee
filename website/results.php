@@ -4,8 +4,23 @@
   $dbconn = pg_connect("host=webcourse.cs.nuim.ie dbname=cs230 user=cs230teamd6 password=Ootheigh") 
     or die('Could not connect: ' . pg_last_error());
 
-  // Performing SQL query
-  $query = 'SELECT * FROM movies';
+
+  if(isset($_GET['q']) && !empty($_GET['q'])) {
+
+  	$search_query = pg_escape_string($_GET['q']);
+  	$query = "SELECT * FROM movies WHERE movie_title ILIKE '%{$search_query}%'";
+
+  } elseif(isset($_GET['cat']) && !empty($_GET['cat'])) {
+
+  	$query = 'SELECT * FROM movies WHERE movie_genre = ' . $_GET['cat'];
+
+  } else {
+
+  	$query = 'SELECT * FROM movies';
+
+  }
+
+
   $result = pg_query($query) or die('Query failed: ' . pg_last_error());
 
 ?>

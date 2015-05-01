@@ -23,26 +23,28 @@
         <div id="logo">
             <p id="logo_text">DeeVeeDee</p>
             <div id="search">
-                <input type="text" name="search-field" id="search-field" value="Movie, Actor, Genre...">
-                    <button id="search-button"><i class="fa fa-search"></i></button>
+                <form action="results.php" method="get">
+                    <input type="text" name="q" id="search-field" placeholder="Search for movies...">
+                    <button type="submit" id="search-button"><i class="fa fa-search"></i></button>
+                </form>
             </div>
         </div>
         <div id="header_menu">
             <ul id="genres">
               <li class="list">
-                <a href="http://www.apple.ie" target="content">Home</a>
+                <a href="index.php">Home</a>
               </li>
                 <li class="list">
-                  <a href="http://www.ideastarter.ie" target="content">Action</a>
+                  <a href="results.php?cat=1">Action</a>
                 </li>
                 <li class="list">
-                  <a href="#" target="content">TV Shows</a>
+                  <a href="results.php?cat=2">TV Shows</a>
                 </li>
                 <li class="list">
-                    <a href="#" target="content">Horror</a>
+                    <a href="results.php?cat=3">Horror</a>
                 </li>
                 <li class="list">
-                    <a href="http://starkshaw.me" target="content">Sci-Fi</a>
+                    <a href="results.php?cat=4">Sci-Fi</a>
                 </li>
             </ul>
         </div>

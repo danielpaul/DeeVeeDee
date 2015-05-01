@@ -28,6 +28,11 @@
                     <button type="submit" id="search-button"><i class="fa fa-search"></i></button>
                 </form>
             </div>
+            <div id="login">
+                <button id="shopping-button" class="login-buttons"><i class="fa fa-shopping-cart fa-2x"></i></button>
+                <button id="log-in-button" class="login-buttons"><i class="fa fa-sign-in fa-2x"></i></button>
+            </div>
+            <div style="clear: both;"></div>
         </div>
         <div id="header_menu">
             <ul id="genres">
@@ -47,6 +52,7 @@
                     <a href="results.php?cat=4">Sci-Fi</a>
                 </li>
             </ul>
+
         </div>
     </header>
 

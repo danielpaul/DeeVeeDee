@@ -7,19 +7,21 @@
 <?php include('header.php'); ?>
 
 
-        <section id="main">
+        <section id="main" class="clearfix">
           <div class="container">
 
-            <div class="left">
+            <section class="left">
+
+            left
 
               <!-- Top Movies -->
 
-            </div><!-- / .left -->
+            </section><!-- / .left -->
 
-            <div class="right">
+            <section class="right">
 
               <div id="featured">
-                iframe
+                iframe video
                 <h2>Movie title</h2>
               </div><!-- / #featured -->
 
@@ -27,7 +29,7 @@
 
               </div>
 
-            </div><!-- / .right -->
+            </section><!-- / .right -->
 
           </div><!-- / .container -->
         </section><!-- / #main -->

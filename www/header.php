@@ -1,3 +1,8 @@
+<?php 
+    // Require helper functions.
+    require_once('php/functions.php');
+?>
+
 <!doctype html>
 <html class="no-js" lang="">
     <head>
@@ -19,24 +24,41 @@
 
         <header>
             <section id="top">
-                <div class="container">
+                <div class="container clearfix">
                     <div id="logo">
                         <h1>DeeVeeDee</h1>
                         <h3>Watch DVDs in a few clicks</h3>
                     </div>
                     <div id="search">
-                        Search box
+
+                        <form action="movies.php" method="get">
+                            <input type="text" name="q" placeholder="Search for movies..." required>
+                            <input type="submit" value="Search">
+                        </form>
+
+                    </div>
+                    <div id="user">
+                        <ul>
+                            <li>
+                                <a href="#" title="">Login</a>
+                            </li>
+                            <li>
+                                <a href="#" title="">Register</a>
+                            </li>
                     </div>
                 </div>
 
-            </div>
+            </section>
             <section id="menu">
                 <div class="container">
                     <ul>
                         <li><a href="#" title="">Home</a></li>
-
-                        <!-- login / register float right -->
+                        <li><a href="#" title="">Action</a></li>
+                        <li><a href="#" title="">TV Shows</a></li>
+                        <li><a href="#" title="">Sci-Fi</a></li>
+                        <li><a href="#" title="">Horror</a></li>
+                        <li><a href="#" title="">More</a></li>
                     </ul>
                 </div>
-            </div>
+            </section>
         </header>

@@ -38,6 +38,23 @@
 
                     </div>
                     <div id="user">
+
+                        <?php if(is_loggedin()) { ?>
+
+                        <ul class="loggedin">
+                            <li class="welcome">
+                                Welcome <?php echo get_fname(); ?>!
+                            </li>
+                            <li>
+                                <a href="#" title="">My Account</a>
+                            </li>
+                            <li>
+                                <a href="php/user_logout.php" title="Log out">Log out</a>
+                            </li>
+                        </ul>
+
+                        <?php } else { ?>
+
                         <ul>
                             <li>
                                 <a href="login.php" title="Login to your account">Login</a>
@@ -45,6 +62,10 @@
                             <li>
                                 <a href="register.php" title="Register for a free account">Register</a>
                             </li>
+                        </ul>
+
+                        <?php } ?>
+                        
                     </div>
                 </div>
 

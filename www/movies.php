@@ -7,15 +7,15 @@
   if(isset($_GET['q']) && !empty($_GET['q'])) { // If searching
 
     $search_query = pg_escape_string($_GET['q']);
-    $query = "SELECT * FROM movies WHERE movie_title ILIKE '%{$search_query}%' LIMIT 10";
+    $query = "SELECT * FROM movies WHERE movie_title ILIKE '%{$search_query}%' LIMIT 6";
 
     $js_search_query = "q=" . $_GET['q'];
 
-    $title = "Search results for " . $_GET['q']; // Update page title.
+    $title = "Search results for '" . $_GET['q'] . "'"; // Update page title.
 
   } elseif(isset($_GET['cat']) && !empty($_GET['cat'])) { // If listing the category.
 
-    $query = 'SELECT * FROM movies WHERE movie_genre = ' . $_GET['cat'] . ' LIMIT 10';
+    $query = 'SELECT * FROM movies WHERE movie_genre = ' . $_GET['cat'] . ' LIMIT 6';
 
     $js_search_query = "cat=" . $_GET['cat'];
 
@@ -23,13 +23,11 @@
 
   } else { // if getting all movies.
 
-    $query = 'SELECT * FROM movies LIMIT 10';
+    $query = 'SELECT * FROM movies LIMIT 6';
 
   }
 
-?>
-
-<?php include('includes/header.php'); ?>
+include('includes/header.php'); ?>
 
 
         <section id="main" class="clearfix search">

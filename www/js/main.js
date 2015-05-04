@@ -130,4 +130,49 @@ $( document ).ready(function() {
   }
 
 
+
+
+  /* User Registration */
+
+  // Check if username is available.
+  if($('form#register').length) { // if on register page
+
+    var valid_username = false;
+
+    // Disable submitting the form until valid username.
+    $('form#register').submit(function(){
+      return valid_username;
+    });
+
+    $('form#register input#username').on('input', function() {
+
+      var username = $(this).val();
+
+      // Check for username length.
+      if(username.length < 5) {
+        $("form#register label[for='username'] small").removeClass('green').addClass('red').html("Username is too short...");
+        valid_username = false;
+        return false; // Stop here.
+      }
+
+      $.ajax({
+        url: "php/check_username.php?username=" + username,
+        success: function(result) {
+
+          if(result == "true") {
+            valid_username = true;
+            $("form#register label[for='username'] small").addClass('green').html("Username is available!");
+          } else {
+            valid_username = false;
+            $("form#register label[for='username'] small").removeClass('green').addClass('red').html("Username is taken!");
+          }
+
+        }
+      });
+
+    });
+
+  }
+
+
 });

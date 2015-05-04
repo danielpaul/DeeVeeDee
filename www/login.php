@@ -1,10 +1,9 @@
 <?php
   // Page information
   $title = "Login";
+
+  include('includes/header.php'); 
 ?>
-
-
-<?php include('includes/header.php'); ?>
 
 
         <section id="main" class="clearfix">
@@ -13,6 +12,16 @@
             <section id="form">
 
               <h3>Login</h3>
+
+              <?php if(isset($_GET['msg']) && $_GET['msg'] == 1) { ?>
+              <div class="msg">
+                <p>User is not registered. <a href="register.php" title="Register">Register &rarr;</a></p>
+              </div>
+              <?php } else if(isset($_GET['msg']) && $_GET['msg'] == 2) { ?>
+              <div class="msg">
+                <p>Oops! Wrong password. Try again...</p>
+              </div>
+              <?php } ?>
 
               <form action="php/user_login.php" method="post">
                 

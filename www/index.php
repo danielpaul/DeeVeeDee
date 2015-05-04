@@ -1,10 +1,9 @@
 <?php
   // Page information
   $title = "Homepage";
+
+  include('includes/header.php'); 
 ?>
-
-
-<?php include('header.php'); ?>
 
 
         <section id="main" class="clearfix">
@@ -34,4 +33,4 @@
           </div><!-- / .container -->
         </section><!-- / #main -->
 
-<?php include('footer.php'); ?>
+<?php include('includes/footer.php'); ?>

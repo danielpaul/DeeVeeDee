@@ -14,7 +14,7 @@
 
               <h3>Register</h3>
 
-              <form action="php/user_register.php" method="post">
+              <form id="register" action="php/user_register.php" method="post">
                 
                 <div class="group">
                   <label for="fname">First Name</label>
@@ -29,6 +29,11 @@
                 <div class="group">
                   <label for="email">Email Address</label>
                   <input type="email" id="email" name="email" placeholder="Your Email Address" required>
+                </div>
+
+                <div class="group">
+                  <label for="username">Username <small></small></label>
+                  <input type="text" id="username" name="username" placeholder="Pick a username" required>
                 </div>
 
                 <div class="group">

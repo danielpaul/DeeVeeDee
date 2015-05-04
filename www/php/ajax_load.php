@@ -16,8 +16,8 @@
     $query = "SELECT * FROM movies WHERE movie_title ILIKE '%{$search_query}%' LIMIT {$limit} OFFSET {$offset}";
 
   } elseif(isset($_GET['cat']) && !empty($_GET['cat'])) { // If listing the category.
-
-    $query = "SELECT * FROM movies WHERE movie_genre = " . $_GET['cat'] . " LIMIT {$limit} OFFSET {$offset}";
+    $cat = $_GET['cat'];
+    $query = "SELECT * FROM movies WHERE movie_genre = {$cat} LIMIT {$limit} OFFSET {$offset}";
 
 
   } else { // if getting all movies.

@@ -25,7 +25,7 @@ $( document ).ready(function() {
 
 
   /* Ajax load search results */
-  var offset = 10;
+  var offset = 6;
 
   function load_more_results(query) {
 
@@ -34,11 +34,12 @@ $( document ).ready(function() {
       url: "php/ajax_load.php?" + query + "&offset=" + offset,
       success: function(result) {
 
+        // console.log(result);
+
         // If no more results, remove load more button.
         if(result.replace(/\s/g, '') == "") {
           $('#load-more-movies').fadeOut();
           $('#pagination').html('<h5>No more results to load...</h5>');
-
         }
 
         // Add to webpage.

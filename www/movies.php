@@ -15,11 +15,11 @@
 
   } elseif(isset($_GET['cat']) && !empty($_GET['cat'])) { // If listing the category.
 
-    $query = 'SELECT * FROM movies LIMIT 10 WHERE movie_genre = ' . $_GET['cat'];
+    $query = 'SELECT * FROM movies WHERE movie_genre = ' . $_GET['cat'] . ' LIMIT 10';
 
     $js_search_query = "cat=" . $_GET['cat'];
 
-    $title = "Movies in this category";
+    $title = "Movies in genre";
 
   } else { // if getting all movies.
 
@@ -29,7 +29,7 @@
 
 ?>
 
-<?php include('header.php'); ?>
+<?php include('includes/header.php'); ?>
 
 
         <section id="main" class="clearfix search">
@@ -77,7 +77,7 @@
 
               <div id="serach-results">
 
-                <h2>Search Results for '<?php echo $_GET['q']; ?>'.</h2>
+                <h2><?php echo $title; ?></h2>
 
                 <div id="no-movies-message">
                   <h3>Oops! Looks like no movies matched your serach!</h3>
@@ -100,4 +100,4 @@
           </div><!-- / .container -->
         </section><!-- / #main -->
 
-<?php include('footer.php'); ?>
+<?php include('includes/footer.php'); ?>

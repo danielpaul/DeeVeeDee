@@ -40,10 +40,10 @@
                     <div id="user">
                         <ul>
                             <li>
-                                <a href="#" title="">Login</a>
+                                <a href="login.php" title="Login to your account">Login</a>
                             </li>
                             <li>
-                                <a href="#" title="">Register</a>
+                                <a href="register.php" title="Register for a free account">Register</a>
                             </li>
                     </div>
                 </div>
@@ -52,12 +52,12 @@
             <section id="menu">
                 <div class="container">
                     <ul>
-                        <li><a href="#" title="">Home</a></li>
-                        <li><a href="#" title="">Action</a></li>
-                        <li><a href="#" title="">TV Shows</a></li>
-                        <li><a href="#" title="">Sci-Fi</a></li>
-                        <li><a href="#" title="">Horror</a></li>
-                        <li><a href="#" title="">More</a></li>
+                        <li><a href="index.php" title="Homepage">Home</a></li>
+                        <li<?php if(isset($_GET['cat']) && $_GET['cat'] == "1") echo ' class="active"'; ?>><a href="movies.php?cat=1" title="Action Movies">Action</a></li>
+                        <li<?php if(isset($_GET['cat']) && $_GET['cat'] == "2") echo ' class="active"'; ?>><a href="movies.php?cat=2" title="TV Shows">TV Shows</a></li>
+                        <li<?php if(isset($_GET['cat']) && $_GET['cat'] == "3") echo ' class="active"'; ?>><a href="movies.php?cat=3" title="Sci-Fi Movies">Sci-Fi</a></li>
+                        <li<?php if(isset($_GET['cat']) && $_GET['cat'] == "4") echo ' class="active"'; ?>><a href="movies.php?cat=4" title="Horrow Movies">Horror</a></li>
+                        <li><a href="movies.php" title="Explore Movies"> + More</a></li>
                     </ul>
                 </div>
             </section>

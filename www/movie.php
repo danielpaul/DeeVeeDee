@@ -16,7 +16,7 @@
   $title = $movie['movie_title'] . " - DeeVeeDee";
 ?>
 
-<?php include('header.php'); ?>
+<?php include('includes/header.php'); ?>
 
 
         <section id="main" class="clearfix">
@@ -47,4 +47,4 @@
   pg_free_result($result);
 ?>
 
-<?php include('footer.php'); ?>
+<?php include('includes/footer.php'); ?>

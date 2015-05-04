@@ -226,6 +226,60 @@ ul.movies-list a.button-yellow {
 }
 
 
+/* Login & Register Page */
+
+#form {
+  width: 300px;
+  margin: 0 auto;
+  margin-top: 50px;
+
+  background: white;
+  padding: 20px;
+
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+#form h3 {
+  margin-top: 0;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #F5F5F5;
+}
+
+#form label {
+  margin-top: 20px;
+  margin-bottom: 5px;
+  display: block;
+  color: #A9A9B0;
+  text-transform: uppercase;
+}
+
+#form input {
+  width: 285px;
+
+  padding: 5px 6px;
+  display: inline-block;
+  border: 1px solid #ccc;
+
+  box-shadow: inset 0 1px 3px #ddd;
+  vertical-align: middle;
+
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+
+#form .submit {
+  text-align: right;
+  margin-top: 30px;
+}
+
+#form button {
+  margin-left: 10px;
+}
+
+
 /* Useful classes */
 
 .pull-right {
@@ -246,6 +300,10 @@ ul.movies-list a.button-yellow {
   height: 0;
 }
 
+.text-centre {
+  text-align: center;
+}
+
 /* Footer */
 
 footer {
@@ -259,7 +317,7 @@ footer {
 /* Extra Styles */
 
 
-a.button-yellow {
+.button-yellow {
   
   background-color: #EFBE42;
 
@@ -282,11 +340,11 @@ a.button-yellow {
   text-shadow: 0px 1px 0px #ffee66;
 }
 
-a.button-yellow:hover {
+.button-yellow:hover {
   background-color: #EEB935;
 }
 
-a.button-white {
+.button-white {
   
   background-color: #F3F4F6;
 

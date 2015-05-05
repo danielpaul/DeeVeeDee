@@ -28,7 +28,7 @@
 
 
   // Redirect.
-  header("Location: ../downloads.php");
+  header("Location: ../downloads.php?note=" . urlencode("You have successfully purchased your new DVDs! They are ready to be downloaded."));
   die();
 
 

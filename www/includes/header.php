@@ -87,3 +87,14 @@
                 </div>
             </section>
         </header>
+
+
+        <?php 
+        // For displaying messages on pages.
+        if(isset($_GET['note'])) { ?>
+            <section>
+                <div class="container">
+                    <div id="note"><?php echo $_GET['note']; ?></div>
+                </div>
+            </section>
+        <?php } ?>

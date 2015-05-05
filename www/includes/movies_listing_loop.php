@@ -4,8 +4,11 @@
 
                   $is_downloads_page = (isset($is_downloads_page));
 
+                  $total_results = 0;
+
                   $result = do_query($query);
                   while($line = pg_fetch_array($result, null, PGSQL_ASSOC)) { 
+                    $total_results++;
                 ?>
                   <li data-id="<?php echo $line['movid_id']; ?>" data-genre="<?php echo $line['movie_genre']; ?>" data-cost="<?php echo $line['movie_price']; ?>">
                     
@@ -53,6 +56,7 @@
                   </li>
                 <?php 
                   }
+
                   // Free resultset
                   pg_free_result($result);
                 ?>

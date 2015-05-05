@@ -27,6 +27,15 @@
 
               </ul>
 
+              <?php
+                // if no results are found.
+                if($total_results == 0) { 
+              ?>
+                <div id="no-movies-message">
+                  <h3>Oops! Looks like you havn't purchased any movies yet...</h3>
+                </div>
+              <?php } ?>
+
             </section><!-- / #cart -->
 
           </div><!-- / .container -->

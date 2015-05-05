@@ -19,7 +19,33 @@
 
     $js_search_query = "cat=" . $_GET['cat'];
 
-    $title = "Movies in genre";
+    switch ($_GET['cat']) {
+      case '1':
+        $genre_name = "Action Movies";
+        break;
+
+      case '2':
+        $genre_name = "TV Shows";
+        break;
+
+      case '3':
+        $genre_name = "Comedy Movies";
+        break;
+
+      case '4':
+        $genre_name = "Horror Movies";
+        break;
+
+      case '5':
+        $genre_name = "Sci-Fi Movies";
+        break;
+      
+      default:
+        $genre_name = "Movies in this genre";
+        break;
+    }
+
+    $title = $genre_name;
 
   } else { // if getting all movies.
 

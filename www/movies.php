@@ -47,10 +47,13 @@ include('includes/header.php'); ?>
                   <a href="#" data-genre="2" id="tv-shows-filter" title="TV Shows">TV Shows</a>
                 </li>
                 <li>
-                  <a href="#" data-genre="3" id="scifi-movies-filter" title="Sci-Fi Movies">Sci-Fi Movies</a>
+                  <a href="#" data-genre="3" id="comedy-movies-filter" title="Comedy Movies">Comedy Movies</a>
                 </li>
                 <li>
                   <a href="#" data-genre="4" id="horror-movies-filter" title="Horror Movies">Horror Movies</a>
+                </li>
+                <li>
+                  <a href="#" data-genre="5" id="scifi-movies-filter" title="Sci-Fi Movies">Sci-Fi Movies</a>
                 </li>
               </ul>
 

@@ -83,8 +83,9 @@
                         <li><a href="index.php" title="Homepage">Home</a></li>
                         <li<?php if(isset($_GET['cat']) && $_GET['cat'] == "1") echo ' class="active"'; ?>><a href="movies.php?cat=1" title="Action Movies">Action</a></li>
                         <li<?php if(isset($_GET['cat']) && $_GET['cat'] == "2") echo ' class="active"'; ?>><a href="movies.php?cat=2" title="TV Shows">TV Shows</a></li>
-                        <li<?php if(isset($_GET['cat']) && $_GET['cat'] == "3") echo ' class="active"'; ?>><a href="movies.php?cat=3" title="Sci-Fi Movies">Sci-Fi</a></li>
-                        <li<?php if(isset($_GET['cat']) && $_GET['cat'] == "4") echo ' class="active"'; ?>><a href="movies.php?cat=4" title="Horrow Movies">Horror</a></li>
+                        <li<?php if(isset($_GET['cat']) && $_GET['cat'] == "3") echo ' class="active"'; ?>><a href="movies.php?cat=3" title="Comedy Movies">Comedy</a></li>
+                        <li<?php if(isset($_GET['cat']) && $_GET['cat'] == "4") echo ' class="active"'; ?>><a href="movies.php?cat=4" title="Horror Movies">Horror</a></li>
+                        <li<?php if(isset($_GET['cat']) && $_GET['cat'] == "5") echo ' class="active"'; ?>><a href="movies.php?cat=5" title="Sci-Fi Movies">Sci-Fi</a></li>
                         <li><a href="movies.php" title="Explore Movies"> + More</a></li>
                     </ul>
                 </div>

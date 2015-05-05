@@ -26,7 +26,7 @@
             <section id="top">
                 <div class="container clearfix">
                     <div id="logo">
-                        <h1>DeeVeeDee</h1>
+                        <h1><a href="index.php" title="Homepage">DeeVeeDee</a></h1>
                         <h3>Watch DVDs in a few clicks</h3>
                     </div>
                     <div id="search">
@@ -65,6 +65,9 @@
                             </li>
                             <li>
                                 <a href="register.php" title="Register for a free account">Register</a>
+                            </li>
+                            <li>
+                                <a href="cart.php" title="View your cart">Cart (<span class="cart_count" id="cart_count"><?php echo get_cart_count(); ?></span>)</a>
                             </li>
                         </ul>
 

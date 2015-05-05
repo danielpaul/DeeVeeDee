@@ -1,10 +1,8 @@
 <?php
   // Page information
   $title = "Register";
-?>
 
-
-<?php include('includes/header.php'); ?>
+  include('includes/header.php'); ?>
 
 
         <section id="main" class="clearfix">

@@ -38,9 +38,15 @@
 
               </ul>
 
+
               <div class="checkout_button">
+                <?php if(is_loggedin()) { ?>
                 <a href="checkout.php?total=<?php echo $cart_total; ?>" class="button-yellow large" title="Buy Now">Checkout - &euro;<?php echo $cart_total; ?></a>
+                <?php } else { ?>
+                <a href="login.php" class="button-yellow large" title="Login">Login / Register</a>
+                <?php } ?>
               </div>
+
 
             </section><!-- / #cart -->
 

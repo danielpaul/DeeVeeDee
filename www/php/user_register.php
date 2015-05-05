@@ -14,7 +14,7 @@ $pass_one = $_POST['pass_one'];
 $pass_two = $_POST['pass_two'];
 
 if($pass_one != $pass_two)
-  header("Location: ../register.php");
+  header("Location: ../register.php?msg=Confirm Password");
 
 
 /*

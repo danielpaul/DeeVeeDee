@@ -35,7 +35,6 @@ pg_close($dbconn);
 
 
 // Login user
-session_start();
 $_SESSION["logged"] = $username;
 
 

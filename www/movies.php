@@ -78,7 +78,7 @@ include('includes/header.php'); ?>
                 <h2><?php echo $title; ?></h2>
 
                 <div id="no-movies-message">
-                  <h3>Oops! Looks like no movies matched your serach!</h3>
+                  <h3>Oops! Looks like no movies matched your search!</h3>
                 </div>
 
                 <ul class="movies-list">

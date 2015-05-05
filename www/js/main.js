@@ -69,10 +69,10 @@ $( document ).ready(function() {
 
       e.preventDefault(); // prevent default action.
 
-      var genre = $(this).data('genre');
+      var genre = parseInt($(this).data('genre'));
 
       if(genre == 0) {
-        $('ul.movies-list li[data-genre=' + genre + ']').show();
+        $('ul.movies-list li').show();
       } else {
         $('ul.movies-list li:not([data-genre=' + genre + '])').hide();
         $('ul.movies-list li[data-genre=' + genre + ']').show();

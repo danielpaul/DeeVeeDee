@@ -6,7 +6,7 @@
 
   // Check if there is something in cart first.
   if(get_cart_count() < 1) {
-    header("Location: movies.php");
+    header("Location: movies.php?note=" . urlencode("You do not have anything in your cart. Checkout some movies."));
     die();
   }
 

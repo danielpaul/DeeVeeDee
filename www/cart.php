@@ -2,6 +2,14 @@
   // Page information
   $title = "Your Cart";
 
+  require_once('php/functions.php');
+
+  // Check if there is something in cart first.
+  if(get_cart_count() < 1) {
+    header("Location: movies.php");
+    die();
+  }
+
   include('includes/header.php'); 
 ?>
 
@@ -24,14 +32,14 @@
 
                 $query = "SELECT * FROM movies WHERE movid_id IN ({$cart_movies})";
 
-                $hide_yellow_button = true;
+                $is_cart_page = true;
                 include('includes/movies_listing_loop.php');
               ?>
 
               </ul>
 
               <div class="checkout_button">
-                <a href="checkout.php" class="button-yellow large" title="Buy Now">Checkout</a>
+                <a href="checkout.php" class="button-yellow large" title="Buy Now">Checkout - &euro;<?php echo $cart_total; ?></a>
               </div>
 
             </section><!-- / #cart -->

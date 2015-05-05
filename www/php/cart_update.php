@@ -22,7 +22,8 @@
     // Remove ID from array.
     $_SESSION['cart'] = array_diff($_SESSION['cart'], array($remove));
 
-    echo "Add to cart";
+    // Echo total items in cart.
+    echo get_cart_count();
 
   }
 

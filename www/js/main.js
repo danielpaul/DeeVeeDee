@@ -177,7 +177,7 @@ $( document ).ready(function() {
 
   /* Cart & Checkout */
 
-  $('ul.movies-list li a.button-yellow').on('click', function(e) {
+  $(document).on('click', 'ul.movies-list li a.button-yellow', function(e) {
 
     e.preventDefault();
     var button = $(this);
@@ -203,6 +203,33 @@ $( document ).ready(function() {
 
     }
     
+
+  });
+
+
+  $('ul.movies-list li a.remove_from_cart').on('click', function(e) {
+
+    e.preventDefault();
+    var button = $(this);
+    var movie_id = $(this).parent('li').data('id');
+    var cart_count = parseInt($('#cart_count').html());
+
+    $.ajax({
+      url: "php/cart_update.php?action=remove&movie=" + movie_id,
+      success: function(result) {
+
+        // Redirect if nothing in cart. When removing last item.
+        if(parseInt(result) == 0) {
+          window.location.href = "movies.php";
+          return false;
+        }
+
+        $('.cart_count').html(result); // Update cart count.
+        button.parent('li').fadeOut();
+        $('.checkout_button a').html("Checkout");
+
+      }
+    });
 
   });
 

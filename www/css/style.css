@@ -314,6 +314,10 @@ section#cart {
   margin-top: 50px;
 }
 
+section#cart h2 {
+  margin-bottom: 40px;
+}
+
 section#cart ul.movies-list > li {
   width: 293px;
 }

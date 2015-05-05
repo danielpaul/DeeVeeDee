@@ -111,4 +111,22 @@
     return ($given_hash == $test_hash) ? true : false;
   }
 
+
+  /* Checkout & Cart */
+
+  // Function checks if movie is in cart.
+  function in_cart($movie_id) {
+    if(!isset($_SESSION['cart'])) return false; // If no cart yet.
+
+    return in_array($movie_id, $_SESSION['cart']);
+  }
+
+  function get_cart_count() {
+    if(isset($_SESSION['cart'])) {
+      return count($_SESSION['cart']);
+    } else {
+      return 0;
+    }
+  }
+
 ?>

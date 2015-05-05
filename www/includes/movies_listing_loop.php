@@ -1,4 +1,5 @@
                 <?php
+                  $hide_yellow_button = (isset($hide_yellow_button));
                   $result = do_query($query);
                   while($line = pg_fetch_array($result, null, PGSQL_ASSOC)) { 
                 ?>
@@ -17,7 +18,18 @@
 
                     <a href="movie.php?v=<?php echo $line['movid_id']; ?>" class="button-white" title="Watch Trailer">Preview</a>
 
-                    <a href="" class="button-yellow" title="Buy Movie">Add to cart - &euro;<?php echo $line['movie_price']; ?></a>
+                    <?php if(!$hide_yellow_button) { ?>
+                      <?php if(in_cart($line['movid_id'])) { ?>
+
+                      <a href="#" data-action="checkout" class="button-yellow" title="Buy Movie">View Cart</a>
+
+                      <?php } else { ?>
+
+                      <a href="#" data-action="add" class="button-yellow" title="Buy Movie">Add to cart - &euro;<?php echo $line['movie_price']; ?></a>
+
+                      <?php } ?>
+                    <?php } ?>
+
                   </li>
                 <?php 
                   }

@@ -170,10 +170,41 @@ $( document ).ready(function() {
 
         }
       });
-
     });
 
   }
+
+
+  /* Cart & Checkout */
+
+  $('ul.movies-list li a.button-yellow').on('click', function(e) {
+
+    e.preventDefault();
+    var button = $(this);
+    var movie_id = $(this).parent('li').data('id');
+    var cart_count = parseInt($('#cart_count').html());
+
+    if(button.data('action') == "add") {
+
+      $.ajax({
+        url: "php/cart_update.php?action=add&movie=" + movie_id,
+        success: function(result) {
+
+          $('.cart_count').html(result); // Update cart count.
+          button.html("View Cart").data('action', 'checkout');
+
+        }
+      });
+
+    } else {
+
+      // Redirect to checkout page.
+      window.location.href = "cart.php";
+
+    }
+    
+
+  });
 
 
 });

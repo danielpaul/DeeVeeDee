@@ -45,8 +45,12 @@
                             <li class="welcome">
                                 Welcome <?php echo get_fname(); ?>!
                             </li>
+                            <br/>
                             <li>
                                 <a href="#" title="">My Account</a>
+                            </li>
+                            <li>
+                                <a href="cart.php" title="View your cart">Cart (<span class="cart_count" id="cart_count"><?php echo get_cart_count(); ?></span>)</a>
                             </li>
                             <li>
                                 <a href="php/user_logout.php" title="Log out">Log out</a>

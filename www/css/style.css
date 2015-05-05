@@ -45,12 +45,12 @@ a {
 
 #search {
   float: left;
-  width: 450px;
+  width: 400px;
 }
 
 #user {
   float: left;
-  width: 250px;
+  width: 300px;
 }
 
 #top h1 {
@@ -63,7 +63,7 @@ a {
 
 #search form {
   margin-top: 18px;
-  margin-left: 60px;
+  margin-left: 15px;
 }
 
 #user {
@@ -193,6 +193,7 @@ ul.movies-list > li {
   border-radius: 5px;
 }
 
+
 ul.movies-list > li img {
   width: 100px;
   float: left;
@@ -307,6 +308,22 @@ ul.movies-list a.button-yellow {
 }
 
 
+/* Cart */
+
+section#cart {
+  margin-top: 50px;
+}
+
+section#cart ul.movies-list > li {
+  width: 293px;
+}
+
+section#cart div.checkout_button {
+  text-align: right;
+  margin-top: 20px;
+}
+
+
 /* Useful classes */
 
 .pull-right {
@@ -365,6 +382,11 @@ footer {
   padding: 6px 15px;
   text-decoration: none;
   text-shadow: 0px 1px 0px #ffee66;
+}
+
+.button-yellow.large {
+  padding: 12px 24px;
+  font-size: 14px;
 }
 
 .button-yellow:hover {

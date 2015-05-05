@@ -35,6 +35,7 @@ include('includes/header.php'); ?>
 
             <section class="left">
 
+              <?php if(!isset($_GET['cat'])) { ?>
               <h4 class="title">Filter by Genre</h4>
               <ul id="genre-filter">
                 <li class="active">
@@ -56,8 +57,8 @@ include('includes/header.php'); ?>
                   <a href="#" data-genre="5" id="scifi-movies-filter" title="Sci-Fi Movies">Sci-Fi Movies</a>
                 </li>
               </ul>
-
               <br />
+              <?php } ?>
 
               <h4 class="title">Filter by Price</h4>
               <ul id="cost-filter">

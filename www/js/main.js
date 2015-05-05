@@ -175,6 +175,19 @@ $( document ).ready(function() {
   }
 
 
+  /* Video Preview */
+  $(document).on('click', 'ul.movies-list li a.watch_trailer', function(e) {
+    e.preventDefault(); // prevent default function.
+
+    // remove all other videos open.
+    $('.movie_preview').hide().html("").parent('li').height(150);
+
+    var trailer_id = $(this).parent('li').data('trailer');
+
+    $(this).parent('li').height(365).find('.movie_preview').html('<iframe id="Trailer" width="340" height="191" src="https://www.youtube.com/embed/' + trailer_id + '?autoplay=1&amp;rel=0&amp;showinfo=0&amp;autohide=1" frameborder="0" allowfullscreen></iframe>').slideDown();
+  });
+
+
   /* Cart & Checkout */
 
   $(document).on('click', 'ul.movies-list li a.button-yellow', function(e) {
@@ -199,14 +212,13 @@ $( document ).ready(function() {
     } else if(button.data('action') == "none") {
 
       return false;
-      
+
     } else {
 
       // Redirect to checkout page.
       window.location.href = "cart.php";
 
     }
-    
 
   });
 

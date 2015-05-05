@@ -205,6 +205,8 @@ ul.movies-list > li {
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   border-radius: 5px;
+
+  vertical-align: top;
 }
 
 
@@ -230,6 +232,14 @@ ul.movies-list p {
 
 ul.movies-list a.button-yellow {
   margin-top: 10px;
+}
+
+ul.movies-list > li .movie_preview {
+  background: black;
+  height: 191px;
+  margin-top: 30px;
+
+  display: none;
 }
 
 #no-movies-message {

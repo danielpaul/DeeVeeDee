@@ -27,14 +27,13 @@
               <p><?php echo $movie['movie_release_year']; ?></p>
               <p>Directed by <?php echo $movie['movie_director']; ?></p>
 
-              <a href="" class="button-yellow">Add to cart - </a>
+              <!-- <a href="#" class="button-yellow">Add to cart - &euro;<?php echo $movie['movie_price']; ?></a> -->
               <!-- share link -->
             </section><!-- / .left -->
 
             <section class="right">
 
-              <iframe id="Trailer" width="640" height="360" src="https://www.youtube.com/embed/<?php echo get_youtube_id($movie['movie_youtube_link']); ?>" frameborder="0" allowfullscreen></iframe>
-
+              <iframe id="Trailer" width="640" height="360" src="https://www.youtube.com/embed/<?php echo get_youtube_id($movie['movie_youtube_link']); ?>?autoplay=0&amp;rel=0&amp;showinfo=0&amp;autohide=1" frameborder="0" allowfullscreen></iframe>
 
             </section><!-- / .right -->
 

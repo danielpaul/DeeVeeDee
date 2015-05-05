@@ -10,14 +10,14 @@
                   while($line = pg_fetch_array($result, null, PGSQL_ASSOC)) { 
                     $total_results++;
                 ?>
-                  <li data-id="<?php echo $line['movid_id']; ?>" data-genre="<?php echo $line['movie_genre']; ?>" data-cost="<?php echo $line['movie_price']; ?>">
+                  <li data-id="<?php echo $line['movid_id']; ?>" data-genre="<?php echo $line['movie_genre']; ?>" data-cost="<?php echo $line['movie_price']; ?>" data-trailer="<?php echo get_youtube_id($line['movie_youtube_link']); ?>">
                     
-                    <a href="movie.php?v=<?php echo $line['movid_id']; ?>" title="<?php echo $line['movie_title']; ?>">
+                    <a href="movie.php?v=<?php echo $line['movid_id']; ?>" title="<?php echo $line['movie_title']; ?>" class="watch_trailer">
                       <img src="img/movies/<?php echo $line['movid_id']; ?>.jpg" alt="<?php echo $line['movie_title']; ?>" />
                     </a>
 
                     <h4>
-                      <a href="movie.php?v=<?php echo $line['movid_id']; ?>" title="More info about this movie"><?php echo $line['movie_title']; ?></a>
+                      <a href="movie.php?v=<?php echo $line['movid_id']; ?>" title="More info about this movie" class="watch_trailer"><?php echo $line['movie_title']; ?></a>
                     </h4>
 
                     <p><?php echo $line['movie_release_year']; ?> / &euro;<?php echo $line['movie_price']; ?></p>
@@ -39,7 +39,7 @@
 
                     <?php } else { // search listings. ?>
 
-                      <a href="movie.php?v=<?php echo $line['movid_id']; ?>" class="button-white" title="Watch Trailer">Preview</a>
+                      <a href="movie.php?v=<?php echo $line['movid_id']; ?>" class="button-white watch_trailer" title="Watch Trailer">Preview</a>
 
                       <?php if(in_cart($line['movid_id'])) { ?>
 
@@ -52,6 +52,8 @@
                       <?php } ?>
 
                     <?php } ?>
+
+                    <div class="movie_preview"></div>
 
                   </li>
                 <?php 

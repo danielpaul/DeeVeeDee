@@ -39,7 +39,7 @@
               </ul>
 
               <div class="checkout_button">
-                <a href="checkout.php" class="button-yellow large" title="Buy Now">Checkout - &euro;<?php echo $cart_total; ?></a>
+                <a href="checkout.php?total=<?php echo $cart_total; ?>" class="button-yellow large" title="Buy Now">Checkout - &euro;<?php echo $cart_total; ?></a>
               </div>
 
             </section><!-- / #cart -->

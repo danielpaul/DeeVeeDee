@@ -92,9 +92,16 @@ a {
 
 #search form input[type='text'] {
   padding: 8px 15px;
-  background: #F5F5F5;
+  background: #E9E9E9;
   border: 0px solid #dbdbdb;
   width: 270px;
+
+  -webkit-border-top-left-radius: 50px;
+  -webkit-border-bottom-left-radius: 50px;
+  -moz-border-radius-topleft: 50px;
+  -moz-border-radius-bottomleft: 50px;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
 }
 
 #search form input[type='submit'] {
@@ -104,6 +111,13 @@ a {
   border: 2px solid #50A253;
   background-color: #50A253;
   color: #fafafa;
+
+  -webkit-border-top-right-radius: 50px;
+  -webkit-border-bottom-right-radius: 50px;
+  -moz-border-radius-topright: 50px;
+  -moz-border-radius-bottomright: 50px;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
 }
 
 

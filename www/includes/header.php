@@ -47,7 +47,7 @@
                             </li>
                             <br/>
                             <li>
-                                <a href="#" title="">My Account</a>
+                                <a href="downloads.php" title="Your Purchases">Purchases</a>
                             </li>
                             <li>
                                 <a href="cart.php" title="View your cart">Cart (<span class="cart_count" id="cart_count"><?php echo get_cart_count(); ?></span>)</a>

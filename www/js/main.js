@@ -196,6 +196,10 @@ $( document ).ready(function() {
         }
       });
 
+    } else if(button.data('action') == "none") {
+
+      return false;
+      
     } else {
 
       // Redirect to checkout page.
@@ -226,7 +230,8 @@ $( document ).ready(function() {
 
         $('.cart_count').html(result); // Update cart count.
         button.parent('li').fadeOut();
-        $('.checkout_button a').html("Checkout");
+
+        $('.checkout_button a').html("Checkout").attr("href", "checkout.php");
 
       }
     });

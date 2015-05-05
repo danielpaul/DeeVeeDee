@@ -2,6 +2,8 @@
                   $is_cart_page = (isset($is_cart_page));
                   $cart_total = 0;
 
+                  $is_downloads_page = (isset($is_downloads_page));
+
                   $result = do_query($query);
                   while($line = pg_fetch_array($result, null, PGSQL_ASSOC)) { 
                 ?>
@@ -18,7 +20,21 @@
                     <p><?php echo $line['movie_release_year']; ?> / &euro;<?php echo $line['movie_price']; ?></p>
                     <p>Directed by <?php echo $line['movie_director']; ?></p>
 
-                    <?php if(!$is_cart_page) { ?>
+
+                    <?php if($is_cart_page) { // is cart page.
+                      // Add total cost of cart.
+                      $cart_total += intval($line['movie_price']);
+                    ?>
+
+                      <a href="#" class="button-white remove_from_cart" title="Remove from cart">Remove</a>
+
+                    <?php } else if($is_downloads_page) { // downloads page listing. ?>
+
+                      <a href="movie.php?v=<?php echo $line['movid_id']; ?>" class="button-white" title="Watch Trailer">Preview</a>
+
+                      <a href="#" data-action="none" class="button-yellow" title="Download Movie">Download</a>
+
+                    <?php } else { // search listings. ?>
 
                       <a href="movie.php?v=<?php echo $line['movid_id']; ?>" class="button-white" title="Watch Trailer">Preview</a>
 
@@ -32,11 +48,6 @@
 
                       <?php } ?>
 
-                    <?php } else { // is cart page.
-                      // Add total cost of cart.
-                      $cart_total += intval($line['movie_price']);
-                    ?>
-                      <a href="#" class="button-white remove_from_cart" title="Remove from cart">Remove</a>
                     <?php } ?>
 
                   </li>

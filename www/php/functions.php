@@ -80,6 +80,14 @@
     return $line['user_fname'];
   }
 
+  function get_user_info() {
+    $query = "SELECT DISTINCT * FROM users WHERE username = '{$_SESSION['logged']}'";
+    db_connect();
+    $result = pg_query($query) or die('Query failed: ' . pg_last_error());
+    $line = pg_fetch_array($result, null, PGSQL_ASSOC);
+    return $line;
+  }
+
 
   /* User Login & Register */
 

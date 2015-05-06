@@ -92,7 +92,7 @@ include('includes/header.php'); ?>
                   <a href="#" id="low-cost-filter" title="Movies on sale">Under &euro;5/on sale</a>
                 </li>
                 <li class="active">
-                  <a href="#" id="normal-cost-filter" title="Regular Rate">&euro;5</a>
+                  <a href="#" id="normal-cost-filter" title="Regular Rate">All</a>
                 </li>
                 <li>
                   <a href="#" id="high-cost-filter" title="Latest Movies">Above &euro;5/new movies</a>

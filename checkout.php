@@ -2,6 +2,11 @@
   // Page information
   $title = "Checkout";
 
+  require_once('php/functions.php');
+
+  // Ensure user is logged in to view this page.
+  require_login();
+
   include('includes/header.php'); 
 ?>
 
@@ -22,7 +27,7 @@
 
                 <div class="group">
                   <label for="exp">Expiry</label>
-                  <input type="number" id="exp" name="exp" placeholder="MM/YY" required>
+                  <input type="number" id="exp" name="exp" placeholder="MMYY" required>
                 </div>
 
                 <div class="group">

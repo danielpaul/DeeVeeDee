@@ -72,6 +72,17 @@
     } 
   };
 
+
+
+  // Make sure user is logged in and if not redirect to login page.
+  function require_login() {
+    if(!isset($_SESSION['logged'])) {
+      header("Location: login.php?note=" . urlencode("Please login to continue..."));
+      die();
+    }
+  }
+
+
   function get_fname() {
     $query = "SELECT DISTINCT * FROM users WHERE username = '{$_SESSION['logged']}'";
     db_connect();

@@ -103,6 +103,8 @@
   /* User Login & Register */
 
 
+  // To ensure database is secure we stored password using PHP’s crypt function with an MD5 encrypted salt to get an SHA-256 hash.
+
   function salt_pass($pass) {
     // generate a 16-character salt string
     $salt = substr(str_replace('+','.',base64_encode(md5(mt_rand(), true))),0,16);
@@ -140,6 +142,7 @@
     return in_array($movie_id, $_SESSION['cart']);
   }
 
+  // Get the number of items in the cart.
   function get_cart_count() {
     if(isset($_SESSION['cart'])) {
       return count($_SESSION['cart']);

@@ -77,6 +77,8 @@
                 </div>
 
             </section>
+
+            <!-- Main navigation menu -->
             <section id="menu">
                 <div class="container">
                     <ul>
@@ -90,6 +92,8 @@
                     </ul>
                 </div>
             </section>
+            <!-- / #menu -->
+
         </header>
 
 

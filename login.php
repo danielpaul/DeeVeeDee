@@ -23,6 +23,7 @@
               </div>
               <?php } ?>
 
+              <!-- Login form -->
               <form action="php/user_login.php" method="post">
                 
                 <div class="group">
@@ -42,6 +43,7 @@
                   <button type="submit" class="button-white">Login</button>
                 </div>
               </form>
+              <!-- / login form -->
 
             </section><!-- / #form -->
 
